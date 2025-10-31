@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about us</title>
+
+  <!-- Link your CSS -->
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <!-- ====== HEADER ====== -->
+  <section id="header">
+    <div class="container">
+      <nav>
+        <div class="logo"><h1>OSM</h1></div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <img src="menu.svg">
+        </div>
+      </nav>
+      <div class="header-content">
+        <h1>About Us</h1>
+        <a href="contact.html"><button class="primary-btn">Talk To Us</button></a>
+      </div>
+    </div>
+  </section>
+  <!-- ====== ABOUT SECTION ====== -->
+  <section id="about" class="container">
+    <div class="about-content">
+      <h1>Our Mission</h1>
+      <p>منظمة أم أبوها ساتي ماجد للتنمية المستدامة منظمة انسانية تعمل في مجالات الصحة, التعليم, البيئة و الاغاثة.و تسعى لتعزيز التنمية المستدامة ودعم الفئات الضعيفة في المجتمع المحلي خصوصا في ولاية نهر النيل وحلية القولد.</p>
+      <p>OSM ORGANIZATION for sustainable development is a humanitarian organization working in fields of health, education, enviroment and relif it seeks to promote sustainable development and support vulnerable groups in the local community, particularly in river nile state and al-quld</p>
+      <a href="contact.html"><button class="primary-btn">Get In Touch</button></a>
+    </div>
+
+    <img src="IMG_20250413_120929.jpg">
+  </section>
+
+  <!-- ====== TALK TO US SECTION ====== -->
+  <section id="talk-to-us">
+    <div class="talk-to-us-content">
+      <h1>Talk To Us</h1>
+      <p>Have any questions? We’re always open to talk about your business, new projects, creative opportunities and how we can help you.</p>
+      <a href="contact.html"><button class="primary-btn">Contact Us</button></a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+    <footer>
+      <ul class="footerlinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="Services.html">services</a></li>
+        <li><a href="contact.html">contact</a></li>        
+      </ul>
+      <h1>OSM</h1>
+      <p>OSM all right reserved</p>
+    </footer>
+<script>
+      // Menu button
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+      </script>
+</body>
+</html>
