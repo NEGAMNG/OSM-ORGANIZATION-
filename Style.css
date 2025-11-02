@@ -103,9 +103,11 @@ nav ul.nav-links li a:hover {
   cursor: pointer;
   z-index: 20;
 }
+
 .menu-btn img {
   width: 32px;
 }
+
 /* === Header Content === */
 .header-content {
   display: flex;
@@ -287,15 +289,36 @@ form {
   color: gray;
 }
 
+/* === Social Links === */
 .followuswrapper {
   margin-top: 30px;
+  text-align: center;
+}
+
+.followuswrapper h3 {
+  color: var(--primary-dark);
+  margin-bottom: 16px;
+  font-size: 22px;
 }
 
 .sociallink {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
   list-style: none;
   margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.sociallink li a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
+}
+
+.sociallink li a img:hover {
+  transform: scale(1.1);
 }
 
 /* ===== FOOTER ===== */
@@ -344,7 +367,7 @@ footer p {
 
 /* === Responsive / Mobile === */
 @media only screen and (max-width: 768px) {
-.menu-btn {
+  .menu-btn {
     display: block;
     position: absolute;
     right: 20px;
