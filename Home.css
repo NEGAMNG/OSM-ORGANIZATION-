@@ -206,9 +206,10 @@ nav {
 }
 
 .about-img img {
-  width: 200px; 
-  height: auto;  
   border-radius: 8px;
+  width: 200px;  /* change to whatever size you need */
+  height: auto;  /* keeps aspect ratio */
+}
 }
 
 #services .service {
