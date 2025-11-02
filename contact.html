@@ -4,93 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <title>contact</title>
+    <title>Contact</title>
   </head>
   <body>
     <section id="contact-header">
       <div class="container">
         <nav>
-          <div class="logo"><h1>OSM</h1>
-          </div>
+          <div class="logo"><h1>OSM</h1></div>
           <ul class="nav-links">
             <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="Services.html">services</a></li>
-            <li><a href="contact.html">contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-          <div class="menu-btn"><img src="menu.svg"></div>
+          <div class="menu-btn"><img src="menu.svg" alt="menu icon"></div>
         </nav>
         <div class="header-content">
           <h1>تواصل معنا</h1>
         </div>
       </div>
     </section>
+
     <section id="contact-us" class="container">
-      <form action="#">
-        <h1>Get in touch</h1>
-        <div class="inputwrapper">
-          <input type="text" placeholder="yourname">
-          <input type="text" placeholder="Your Number">
-          <input type="email" name="" id="" placeholder="email">
-          <textarea name="massage" id="" cols="30" rows="10"></textarea>
-          <button class="primary-btn">SEND NOW</button>
-        </div>
-      </form>
+<form action="#" method="post">
+  <h1>Get in Touch</h1>
+  <div class="inputwrapper">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="text" name="phone" placeholder="Your Number" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <button type="submit" class="primary-btn">SEND NOW</button>
+  </div>
+</form>
+
       <div class="address">
         <h1>Talk To Us</h1>
         <div class="detailswrapper">
           <div class="detail">
-            <img src="email.png">
+            <img src="email.png" alt="email">
             <div class="text">
               <h6>EMAIL</h6>
               <p>something@gmail.com</p>
             </div>
           </div>
           <div class="detail">
-            <img src="phone.png">
+            <img src="phone.png" alt="phone">
             <div class="text">
               <h6>PHONE</h6>
               <p>0101010101001</p>
             </div>
           </div>
           <div class="detail">
-            <img src="location.png">
+            <img src="location.png" alt="location">
             <div class="text">
               <h6>ADDRESS</h6>
               <p>example</p>
             </div>
           </div>          
         </div>
+
         <div class="followuswrapper">
           <h3>Follow Us</h3>
           <ul class="sociallink">
-            <li><a href=""><img src="facebook.png"></a></li>
-          </ul>
-            <li><a href=""><img src="linkedin.png"></a></li>
-          </ul>
-            <li><a href=""><img src="video.png"></a></li>
-          </ul>          
+            <li><a href="https://www.facebook.com/profile.php?id=61583103035713"><img src="facebook_icon-icons.com_59205.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="linkedin_icon-icons.com_65929.png" alt="LinkedIn"></a></li>
+            <li><a href="#"><img src="Youtube_icon-icons.com_66802.png" alt="YouTube"></a></li>
+            <li><a href="https://x.com/osmsatty?t=U46z84V3Ns1d3Oz8XKx7JA&s=09"><img src="twitter_x_new_logo_x_rounded_icon_256078.png" alt="X"></a></li>
+          </ul>       
         </div>
       </div>
     </section>
+
     <footer>
       <ul class="footerlinks">
         <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="Services.html">services</a></li>
-        <li><a href="contact.html">contact</a></li>        
+        <li><a href="about.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>        
       </ul>
       <h1>OSM</h1>
-      <p>OSM all right reserved</p>
+      <p>OSM all rights reserved</p>
     </footer>
 
     <script>
       const menuBtn = document.querySelector('.menu-btn');
       const navLinks  = document.querySelector('.nav-links');
-
-      menuBtn.addEventListener('click', function () {
+      menuBtn.addEventListener('click', () => {
         navLinks.classList.toggle('active');
       });
     </script>
   </body>
-</html>        
+</html>
